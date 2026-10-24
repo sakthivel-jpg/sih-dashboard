@@ -4,7 +4,7 @@
   "description": "AICTE Institution Complaint Monitoring System (ICMS) Statutory Surveillance Dashboard",
   "private": true,
   "scripts": {
-    "build": "echo 'Static build verified - ready for deployment'",
+    "build": "echo 'Static assets ready in public/'",
     "start": "npx serve ."
   },
   "keywords": [
