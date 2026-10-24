@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary":"#ffffff","on-surface-variant":"#444651","surface-container-low":"#f2f3ff","background":"#faf8ff","inverse-on-surface":"#eef0ff","on-tertiary-fixed-variant":"#00504a","tertiary-fixed-dim":"#80d5cb","surface-container-high":"#e2e7ff","secondary-fixed-dim":"#ffb77d","on-primary-fixed":"#00164e","on-primary":"#ffffff","on-tertiary-container":"#65bbb1","tertiary-fixed":"#9cf2e8","outline-variant":"#c5c5d3","surface-container-lowest":"#ffffff","primary-container":"#1e3a8a","on-primary-fixed-variant":"#264191","surface":"#faf8ff","outline":"#757682","surface-variant":"#dae2fd","on-tertiary-fixed":"#00201d","surface-container-highest":"#dae2fd","on-secondary-fixed":"#2f1500","error":"#ba1a1a","inverse-primary":"#b6c4ff","on-error":"#ffffff","surface-bright":"#faf8ff","primary-fixed-dim":"#b6c4ff","on-secondary-container":"#663500","primary-fixed":"#dce1ff","tertiary":"#00312d","on-surface":"#131b2e","error-container":"#ffdad6","on-tertiary":"#ffffff","on-secondary-fixed-variant":"#6e3900","on-background":"#131b2e","surface-container":"#eaedff","secondary":"#904d00","on-error-container":"#93000a","primary":"#00236f","inverse-surface":"#283044","surface-dim":"#d2d9f4","surface-tint":"#4059aa","secondary-fixed":"#ffdcc3","on-primary-container":"#90a8ff","secondary-container":"#fe932c","tertiary-container":"#004944"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{gutter:"1.5rem","margin-mobile":"1rem","space-md":"1rem","space-xs":"0.25rem","gutter-mobile":"0.75rem","space-xl":"2.5rem","space-lg":"1.5rem","space-sm":"0.5rem",margin:"2rem"},fontFamily:{"label-md":["Inter"],"body-lg":["Inter"],"code-sm":["JetBrains Mono"],"body-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"label-sm":["Inter"],"body-md":["Inter"],"headline-xl":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"]},fontSize:{"label-md":["13px",{lineHeight:"18px",fontWeight:"500"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"code-sm":["12px",{lineHeight:"16px",fontWeight:"500"}],"body-sm":["12px",{lineHeight:"16px",fontWeight:"400"}],"headline-md":["20px",{lineHeight:"28px",fontWeight:"600"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"600"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"headline-xl":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-xl-mobile":["26px",{lineHeight:"34px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-sm":["16px",{lineHeight:"24px",fontWeight:"600"}],"headline-lg":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-primary text-on-primary z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.12)]"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center gap-space-sm bg-primary border-b border-primary-container"><div class="w-9 h-9 rounded-lg bg-surface-container-lowest flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-primary text-[22px]">account_balance</span></div><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-on-primary leading-tight truncate">AICTE Portal</span><span class="font-label-sm text-label-sm text-primary-fixed-dim uppercase tracking-wider">Govt. of India</span></div></div><div class="px-space-md py-space-sm"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed-dim">Monitoring Oversight</span></div><nav class="flex flex-col gap-space-xs px-space-sm" data-active-classes="bg-primary-container text-on-primary font-headline-sm shadow-inner"><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg transition-colors bg-primary-container text-on-primary font-headline-sm shadow-inner" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">space_dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-primary-fixed hover:bg-primary-container/60 hover:text-on-primary transition-colors font-body-md text-body-md" data-path="institutions" href="#"><span class="material-symbols-outlined text-[20px]">apartment</span><span>Institutions</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-primary-fixed hover:bg-primary-container/60 hover:text-on-primary transition-colors font-body-md text-body-md" data-path="complaints-cases" href="#"><span class="material-symbols-outlined text-[20px]">assignment_late</span><span>Complaints / Cases</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-primary-fixed hover:bg-primary-container/60 hover:text-on-primary transition-colors font-body-md text-body-md" data-path="bureaus-cells" href="#"><span class="material-symbols-outlined text-[20px]">lan</span><span>Bureaus / Cells</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-primary-fixed hover:bg-primary-container/60 hover:text-on-primary transition-colors font-body-md text-body-md" data-path="reports" href="#"><span class="material-symbols-outlined text-[20px]">description</span><span>Reports</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-primary-fixed hover:bg-primary-container/60 hover:text-on-primary transition-colors font-body-md text-body-md" data-path="analytics" href="#"><span class="material-symbols-outlined text-[20px]">insights</span><span>Analytics</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-primary-fixed hover:bg-primary-container/60 hover:text-on-primary transition-colors font-body-md text-body-md" data-path="alerts" href="#"><span class="material-symbols-outlined text-[20px]">crisis_alert</span><span>Alerts</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-primary-fixed hover:bg-primary-container/60 hover:text-on-primary transition-colors font-body-md text-body-md" data-path="user-management" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span>User Management</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-primary-fixed hover:bg-primary-container/60 hover:text-on-primary transition-colors font-body-md text-body-md" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span>Settings</span></a></nav></div><div class="p-space-sm"><div class="bg-primary-container/50 rounded-lg p-space-sm flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-tertiary-fixed text-[18px]">verified_user</span><span class="font-label-sm text-label-sm text-primary-fixed">Statutory v3.4</span></div><span class="font-code-sm text-code-sm text-primary-fixed-dim">SEC-ID</span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 z-40 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-2 bg-gradient-to-r from-primary-container via-primary-container to-secondary-container"></div><div class="bg-secondary-fixed text-on-secondary-fixed px-space-lg py-1 flex items-center justify-between text-body-sm"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px]">info</span><span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider">Demonstration Environment:</span><span class="font-body-sm text-body-sm">Synthetic institutional records active for audit and validation review.</span></div><span class="font-code-sm text-code-sm bg-surface-container-lowest px-space-xs rounded text-secondary">SANDBOX-09</span></div><div class="h-16 px-space-lg flex items-center justify-between gap-space-md"><div class="flex-1 max-w-xl"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">search</span><input class="w-full h-9 pl-9 pr-4 bg-surface-container-lowest text-on-surface placeholder:text-outline rounded border border-outline-variant focus:border-primary-container focus:outline-none font-body-md text-body-md transition-colors" placeholder="Search AICTE Institution Code, PID, Grievance ID, or Bureau..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="relative flex items-center"><button class="w-9 h-9 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span></button><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-error ring-2 ring-surface"></span></div><div class="h-6 w-px bg-outline-variant"></div><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden md:flex flex-col text-left"><span class="font-headline-sm text-headline-sm leading-tight text-on-surface">Admin Officer</span><span class="font-label-sm text-label-sm text-on-surface-variant">Vigilance Directorate</span></div><span class="material-symbols-outlined text-outline text-[18px]">expand_more</span></div></div></div></header><main class="w-full pt-28 bg-surface px-space-lg min-h-screen"><div class="flex flex-col w-full pb-16">
+<!-- Sovereign Identity & Alert Ribbon -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md mb-space-md shadow-sm flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-container flex items-center justify-center text-on-primary shrink-0 shadow-md">
+<span class="material-symbols-outlined text-[28px]">shield</span>
+</div>
+<div>
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">ALL INDIA COUNCIL FOR TECHNICAL EDUCATION</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            DEMONSTRATION PROTOTYPE • NOT OFFICIAL AICTE STATISTICS
+          </span>
+</div>
+<p class="font-headline-sm text-headline-sm text-on-surface">Institution Complaint Monitoring System (ICMS)</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Ministry of Education, Government of India • Statutory Vigilance & Grievance Directorate</p>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm self-stretch lg:self-auto justify-end">
+<!-- Overdue Counter Pill -->
+<div class="flex items-center gap-2 bg-error-container text-on-error-container px-3 py-1.5 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+<span class="font-label-sm text-label-sm font-bold">187 Escalations Overdue</span>
+</div>
+<!-- Quick Action Buttons -->
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded bg-surface-container-high text-on-surface hover:bg-surface-container transition-colors font-label-md text-label-md" id="btnQuickExport">
+<span class="material-symbols-outlined text-[18px]">download</span>
+        Export Dossier
+      </button>
+<!-- Active Officer Profile Pill -->
+<div class="flex items-center gap-2 bg-surface-container-low px-3 py-1 rounded-full">
+<div class="w-7 h-7 rounded-full bg-primary flex items-center justify-center text-on-primary font-label-sm text-label-sm">RK</div>
+<div class="text-left">
+<div class="font-label-sm text-label-sm font-bold text-on-surface leading-tight">Dr. R. K. Sharma</div>
+<div class="font-code-sm text-code-sm text-on-surface-variant">Joint Director, PGRC</div>
+</div>
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>
+</div>
+</div>
+</div>
+<!-- KPI Cards Grid (Exactly 6 Cards) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-space-md mb-space-lg">
+<!-- Card 1: Total -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between hover:translate-y-[-2px] transition-transform">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Total Complaints</span>
+<div class="w-7 h-7 rounded-full bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">folder_open</span>
+</div>
+</div>
+<div class="font-headline-xl text-headline-xl text-primary font-bold">1,284</div>
+<div class="flex items-center gap-1 mt-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[16px]">trending_up</span>
+<span class="font-semibold text-primary">+12%</span> vs last month
+      </div>
+</div>
+<!-- Card 2: Pending -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between hover:translate-y-[-2px] transition-transform">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Pending</span>
+<div class="w-7 h-7 rounded-full bg-secondary-fixed text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+</div>
+</div>
+<div class="font-headline-xl text-headline-xl text-secondary font-bold">432</div>
+<div class="flex items-center gap-1 mt-2 text-secondary font-body-sm text-body-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+        Urgent SLA review
+      </div>
+</div>
+<!-- Card 3: Under Process -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between hover:translate-y-[-2px] transition-transform">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Under Process</span>
+<div class="w-7 h-7 rounded-full bg-surface-container-high text-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">autorenew</span>
+</div>
+</div>
+<div class="font-headline-xl text-headline-xl text-primary-container font-bold">521</div>
+<div class="flex items-center gap-1 mt-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-primary-container text-[16px]">hourglass_top</span>
+        Active inquiry stage
+      </div>
+</div>
+<!-- Card 4: Disposed -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between hover:translate-y-[-2px] transition-transform">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Disposed</span>
+<div class="w-7 h-7 rounded-full bg-tertiary-fixed text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+</div>
+</div>
+<div class="font-headline-xl text-headline-xl text-tertiary font-bold">298</div>
+<div class="flex items-center gap-1 mt-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="font-semibold text-tertiary">71.4%</span> closure rate
+      </div>
+</div>
+<!-- Card 5: Transferred -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between hover:translate-y-[-2px] transition-transform">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Transferred</span>
+<div class="w-7 h-7 rounded-full bg-surface-container text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">swap_horiz</span>
+</div>
+</div>
+<div class="font-headline-xl text-headline-xl text-on-surface font-bold">33</div>
+<div class="flex items-center gap-1 mt-2 text-on-surface-variant font-body-sm text-body-sm">
+        Inter-Bureau routed
+      </div>
+</div>
+<!-- Card 6: Overdue -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between hover:translate-y-[-2px] transition-transform">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-error font-bold">Overdue Escalated</span>
+<div class="w-7 h-7 rounded-full bg-error-container text-error flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">fmd_bad</span>
+</div>
+</div>
+<div class="font-headline-xl text-headline-xl text-error font-bold">187</div>
+<div class="flex items-center gap-1 mt-2 text-error font-body-sm text-body-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">flag</span>
+        Vigilance Alert
+      </div>
+</div>
+</div>
+<!-- Analytics Panels (2x2 Grid) -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-md mb-space-lg">
+<!-- Panel A: Monthly Trend -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Complaints Received vs Disposed</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Comparative monthly throughput for Year 2024</p>
+</div>
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface">
+<span class="w-3 h-3 rounded-sm bg-primary-container"></span> Received
+          </div>
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface">
+<span class="w-3 h-3 rounded-sm bg-tertiary-fixed-dim"></span> Disposed
+          </div>
+</div>
+</div>
+<!-- Custom SVG Bar Chart -->
+<div class="relative w-full h-56 flex items-end justify-between px-4 pb-6 pt-4 bg-surface-container-low rounded-lg">
+<!-- SVG Grid Lines -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none opacity-20" xmlns="http://www.w3.org/2000/svg">
+<line stroke="currentColor" stroke-dasharray="4" x1="0" x2="100%" y1="25%" y2="25%"></line>
+<line stroke="currentColor" stroke-dasharray="4" x1="0" x2="100%" y1="50%" y2="50%"></line>
+<line stroke="currentColor" stroke-dasharray="4" x1="0" x2="100%" y1="75%" y2="75%"></line>
+</svg>
+<!-- Jan -->
+<div class="flex flex-col items-center gap-1 z-10 flex-1 group">
+<div class="flex items-end gap-1.5 h-36">
+<div class="w-4 bg-primary-container rounded-t transition-all group-hover:opacity-80" style="height: 65%" title="Jan Received: 195"></div>
+<div class="w-4 bg-tertiary-fixed-dim rounded-t transition-all group-hover:opacity-80" style="height: 40%" title="Jan Disposed: 120"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">JAN</span>
+</div>
+<!-- Feb -->
+<div class="flex flex-col items-center gap-1 z-10 flex-1 group">
+<div class="flex items-end gap-1.5 h-36">
+<div class="w-4 bg-primary-container rounded-t transition-all group-hover:opacity-80" style="height: 80%" title="Feb Received: 240"></div>
+<div class="w-4 bg-tertiary-fixed-dim rounded-t transition-all group-hover:opacity-80" style="height: 55%" title="Feb Disposed: 165"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">FEB</span>
+</div>
+<!-- Mar -->
+<div class="flex flex-col items-center gap-1 z-10 flex-1 group">
+<div class="flex items-end gap-1.5 h-36">
+<div class="w-4 bg-primary-container rounded-t transition-all group-hover:opacity-80" style="height: 95%" title="Mar Received: 285"></div>
+<div class="w-4 bg-tertiary-fixed-dim rounded-t transition-all group-hover:opacity-80" style="height: 70%" title="Mar Disposed: 210"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">MAR</span>
+</div>
+<!-- Apr -->
+<div class="flex flex-col items-center gap-1 z-10 flex-1 group">
+<div class="flex items-end gap-1.5 h-36">
+<div class="w-4 bg-primary-container rounded-t transition-all group-hover:opacity-80" style="height: 70%" title="Apr Received: 210"></div>
+<div class="w-4 bg-tertiary-fixed-dim rounded-t transition-all group-hover:opacity-80" style="height: 65%" title="Apr Disposed: 195"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">APR</span>
+</div>
+<!-- May -->
+<div class="flex flex-col items-center gap-1 z-10 flex-1 group">
+<div class="flex items-end gap-1.5 h-36">
+<div class="w-4 bg-primary-container rounded-t transition-all group-hover:opacity-80" style="height: 85%" title="May Received: 255"></div>
+<div class="w-4 bg-tertiary-fixed-dim rounded-t transition-all group-hover:opacity-80" style="height: 75%" title="May Disposed: 225"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">MAY</span>
+</div>
+<!-- Jun -->
+<div class="flex flex-col items-center gap-1 z-10 flex-1 group">
+<div class="flex items-end gap-1.5 h-36">
+<div class="w-4 bg-primary-container rounded-t transition-all group-hover:opacity-80" style="height: 60%" title="Jun Received: 180"></div>
+<div class="w-4 bg-tertiary-fixed-dim rounded-t transition-all group-hover:opacity-80" style="height: 52%" title="Jun Disposed: 156"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">JUN</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-space-sm pt-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span>Average Turnaround Time: <strong class="text-on-surface">14.2 Days</strong></span>
+<span class="text-tertiary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+          +18% Disposal efficiency in Q2
+        </span>
+</div>
+</div>
+<!-- Panel B: Pending Ageing Distribution -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Pending Case Ageing Distribution</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Statutory timeline audit (432 Active Cases)</p>
+</div>
+<span class="font-code-sm text-code-sm bg-surface-container px-2 py-1 rounded text-on-surface-variant">SLA: 15 Days</span>
+</div>
+<div class="flex flex-col gap-3 my-auto">
+<!-- 0-7 Days -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-semibold">0 – 7 Days (Fresh Inquiries)</span>
+<span class="text-on-surface-variant font-code-sm">142 Cases (33%)</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-tertiary-fixed-dim rounded-full" style="width: 33%"></div>
+</div>
+</div>
+<!-- 8-15 Days -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-semibold">8 – 15 Days (Under Scrutiny)</span>
+<span class="text-on-surface-variant font-code-sm">118 Cases (27%)</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 27%"></div>
+</div>
+</div>
+<!-- 16-30 Days -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-semibold">16 – 30 Days (Notice Issued)</span>
+<span class="text-on-surface-variant font-code-sm">85 Cases (20%)</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 20%"></div>
+</div>
+</div>
+<!-- 31-60 Days -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-semibold">31 – 60 Days (Escalated to Vigilance)</span>
+<span class="text-on-surface-variant font-code-sm">51 Cases (12%)</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary-container rounded-full" style="width: 12%"></div>
+</div>
+</div>
+<!-- > 60 Days -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-error font-bold">Over 60 Days (Show-Cause Triggered)</span>
+<span class="text-error font-code-sm font-bold">36 Cases (8%)</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-error rounded-full" style="width: 8%"></div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between mt-space-sm pt-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span>Average resolution cycle: <strong class="text-on-surface">18.4 Days</strong></span>
+<button class="text-primary hover:underline font-semibold flex items-center gap-1">
+          Inspect Overdue Dossiers
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Panel C: Bureau-wise Workload (Doughnut Chart) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Bureau-wise Workload Distribution</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Active grievance portfolio allocation</p>
+</div>
+<span class="material-symbols-outlined text-outline">account_tree</span>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-6 my-auto">
+<!-- SVG Doughnut -->
+<div class="relative w-44 h-44 shrink-0 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 36 36">
+<!-- Background circle -->
+<path class="text-surface-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4.5"></path>
+<!-- RB: 38% -->
+<path class="text-primary-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="38, 100" stroke-width="4.5"></path>
+<!-- PGRC: 29% -->
+<path class="text-secondary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="29, 100" stroke-dashoffset="-38" stroke-width="4.5"></path>
+<!-- Policy: 16% -->
+<path class="text-tertiary-fixed-dim" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="16, 100" stroke-dashoffset="-67" stroke-width="4.5"></path>
+<!-- Approval: 12% -->
+<path class="text-secondary-fixed-dim" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="12, 100" stroke-dashoffset="-83" stroke-width="4.5"></path>
+<!-- Others: 5% -->
+<path class="text-error" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="5, 100" stroke-dashoffset="-95" stroke-width="4.5"></path>
+</svg>
+<div class="absolute flex flex-col items-center justify-center text-center">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">1,284</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Total Cases</span>
+</div>
+</div>
+<!-- Legend breakdown -->
+<div class="flex-1 w-full flex flex-col gap-2">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary-container"></span>
+<span class="text-on-surface">Regulation Bureau (RB)</span>
+</div>
+<span class="font-semibold text-on-surface font-code-sm">38% (488)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<span class="text-on-surface">Public Grievance Redressal (PGRC)</span>
+</div>
+<span class="font-semibold text-on-surface font-code-sm">29% (372)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-tertiary-fixed-dim"></span>
+<span class="text-on-surface">Policy & Academic Bureau</span>
+</div>
+<span class="font-semibold text-on-surface font-code-sm">16% (205)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-secondary-fixed-dim"></span>
+<span class="text-on-surface">Approval Bureau</span>
+</div>
+<span class="font-semibold text-on-surface font-code-sm">12% (154)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-error"></span>
+<span class="text-on-surface">Vigilance & Legal Cell</span>
+</div>
+<span class="font-semibold text-on-surface font-code-sm">5% (65)</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between mt-space-sm pt-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span>Highest Intake: <strong class="text-primary-container">RB (Capitation & Faculty Dues)</strong></span>
+<button class="text-primary hover:underline font-semibold">Bureau Workload Matrix →</button>
+</div>
+</div>
+<!-- Panel D: Regional Heat & Activity -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Regional Complaints Heatmap</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Regional Offices (RO) Activity Matrix</p>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-low px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[16px] text-tertiary">my_location</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">8 AICTE Regions</span>
+</div>
+</div>
+<!-- Regional Activity Grid representation -->
+<div class="grid grid-cols-2 gap-3 my-auto">
+<div class="bg-surface-container-low p-3 rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Northern Region (NWRO/NRO)</span>
+<span class="px-1.5 py-0.5 rounded text-error font-code-sm text-code-sm bg-error-container font-bold">HIGH</span>
+</div>
+<div class="font-headline-md text-headline-md font-bold text-on-surface mt-1">426 Cases</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Delhi NCR, Haryana, UP, Punjab</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-2 overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 82%"></div>
+</div>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Western Region (WRO)</span>
+<span class="px-1.5 py-0.5 rounded text-error font-code-sm text-code-sm bg-error-container font-bold">HIGH</span>
+</div>
+<div class="font-headline-md text-headline-md font-bold text-on-surface mt-1">354 Cases</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Maharashtra, Goa, Gujarat</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-2 overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 68%"></div>
+</div>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Southern Region (SRO/SWRO)</span>
+<span class="px-1.5 py-0.5 rounded text-secondary font-code-sm text-code-sm bg-secondary-fixed font-bold">MODERATE</span>
+</div>
+<div class="font-headline-md text-headline-md font-bold text-on-surface mt-1">312 Cases</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Tamil Nadu, Karnataka, Kerala</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-2 overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 54%"></div>
+</div>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Eastern & NE Region (ERO/NERO)</span>
+<span class="px-1.5 py-0.5 rounded text-tertiary font-code-sm text-code-sm bg-tertiary-fixed font-bold">STABLE</span>
+</div>
+<div class="font-headline-md text-headline-md font-bold text-on-surface mt-1">192 Cases</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">WB, Bihar, Odisha, Assam</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-2 overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 32%"></div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between mt-space-sm pt-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span>Highest Institutional Density: <strong class="text-on-surface">SRO (Chennai)</strong></span>
+<button class="text-primary hover:underline font-semibold">Inspect Region Directory →</button>
+</div>
+</div>
+</div>
+<!-- Case Monitoring & Action Table Section -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<!-- Header & Interactive Filter Bar -->
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-2">
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">Statutory Complaint Registry</h2>
+<span class="px-2 py-0.5 rounded-full bg-primary-container text-on-primary font-code-sm text-code-sm">LIVE FEED</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Real-time surveillance & adjudication roster with duplicate grievance cross-referencing</p>
+</div>
+<div class="flex flex-wrap items-center gap-2">
+<!-- Filter Bureau -->
+<select class="h-9 px-3 bg-surface-container-low text-on-surface rounded font-label-md text-label-md focus:outline-none" id="filterBureau">
+<option value="ALL">All Bureaus</option>
+<option value="RB">Regulation Bureau (RB)</option>
+<option value="PGRC">PGRC Cell</option>
+<option value="Approval">Approval Bureau</option>
+<option value="Policy">Policy Bureau</option>
+<option value="Vigilance">Vigilance Cell</option>
+</select>
+<!-- Filter Status -->
+<select class="h-9 px-3 bg-surface-container-low text-on-surface rounded font-label-md text-label-md focus:outline-none" id="filterStatus">
+<option value="ALL">All Statuses</option>
+<option value="Pending">Pending</option>
+<option value="Under Process">Under Process</option>
+<option value="Overdue">Overdue</option>
+<option value="Disposed">Disposed</option>
+</select>
+<!-- Filter Category -->
+<select class="h-9 px-3 bg-surface-container-low text-on-surface rounded font-label-md text-label-md focus:outline-none" id="filterCategory">
+<option value="ALL">All Categories</option>
+<option value="Capitation Fee">Capitation Fee</option>
+<option value="Faculty Salaries">Faculty Salaries</option>
+<option value="Ragging / Harassment">Ragging / Harassment</option>
+<option value="Infrastructure Deficit">Infrastructure Deficit</option>
+<option value="Admission Irregularity">Admission Irregularity</option>
+</select>
+<!-- Filter Priority -->
+<select class="h-9 px-3 bg-surface-container-low text-on-surface rounded font-label-md text-label-md focus:outline-none" id="filterPriority">
+<option value="ALL">All Priorities</option>
+<option value="Critical">Critical</option>
+<option value="High">High</option>
+<option value="Medium">Medium</option>
+</select>
+<!-- Search Input -->
+<div class="relative flex items-center min-w-[200px]">
+<span class="material-symbols-outlined absolute left-2.5 text-outline text-[18px]">search</span>
+<input class="w-full h-9 pl-8 pr-3 bg-surface-container-low text-on-surface placeholder:text-outline rounded font-body-sm text-body-sm focus:outline-none" id="caseTableSearch" placeholder="Filter institute, ID..." type="text"/>
+</div>
+</div>
+</div>
+<!-- Data Table Container -->
+<div class="w-full overflow-x-auto rounded-lg">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low font-label-sm text-label-sm text-on-surface-variant uppercase">
+<th class="py-3 px-4">Case Reference & PID</th>
+<th class="py-3 px-4">Institution & Affiliation</th>
+<th class="py-3 px-4">Grievance Category</th>
+<th class="py-3 px-4">Bureau / Cell</th>
+<th class="py-3 px-4">Ageing & SLA</th>
+<th class="py-3 px-4">Severity / Flags</th>
+<th class="py-3 px-4">Status</th>
+<th class="py-3 px-4 text-right">Administrative Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high text-body-sm font-body-sm" id="caseTableBody">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors cursor-pointer" data-case="AICTE/PGRC/2024/0984" data-bureau="RB" data-status="Overdue" data-category="Capitation Fee" data-priority="Critical" onclick="openCaseDrawer('AICTE/PGRC/2024/0984')">
+<td class="py-3.5 px-4">
+<div class="font-code-sm text-code-sm font-bold text-primary-container">AICTE/PGRC/2024/0984</div>
+<div class="font-code-sm text-code-sm text-on-surface-variant">PID: 1-49281912</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="font-headline-sm text-headline-sm text-on-surface leading-tight">Apex Institute of Technology</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Affiliated: AKTU, Lucknow (NWRO)</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">Capitation Fee</span>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Complainant: Student Batch</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-label-sm text-label-sm font-semibold text-primary-container">RB (Regulation)</span>
+<div class="font-code-sm text-code-sm text-on-surface-variant">Off: Shri P. N. Verma</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="font-code-sm text-code-sm font-bold text-error">22 Days Active</div>
+<div class="font-label-sm text-label-sm text-error">7 Days Past SLA</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm font-bold bg-error-container text-error">92 / 100</span>
+<span class="material-symbols-outlined text-secondary text-[18px]" title="2 Potential Overlaps detected">dynamic_feed</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm font-bold bg-error-container text-error inline-flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span> Overdue
+              </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="px-3 py-1 rounded bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors inline-flex items-center gap-1">
+                Inspect <span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors cursor-pointer" data-case="AICTE/REG/2024/1102" data-bureau="PGRC" data-status="Under Process" data-category="Faculty Salaries" data-priority="High" onclick="openCaseDrawer('AICTE/REG/2024/1102')">
+<td class="py-3.5 px-4">
+<div class="font-code-sm text-code-sm font-bold text-primary-container">AICTE/REG/2024/1102</div>
+<div class="font-code-sm text-code-sm text-on-surface-variant">PID: 1-10294821</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="font-headline-sm text-headline-sm text-on-surface leading-tight">Global Engineering Academy</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Affiliated: Anna University, Chennai (SRO)</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">Faculty Salaries</span>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Complainant: Faculty Union (6 mo dues)</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-label-sm text-label-sm font-semibold text-primary">PGRC Central</span>
+<div class="font-code-sm text-code-sm text-on-surface-variant">Off: Dr. Sunita Rao</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="font-code-sm text-code-sm font-bold text-on-surface">11 Days Active</div>
+<div class="font-label-sm text-label-sm text-tertiary">Within 15-day SLA</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm font-bold bg-secondary-fixed text-on-secondary-fixed">78 / 100</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm font-bold bg-surface-container-high text-primary-container inline-flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span> Under Process
+              </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="px-3 py-1 rounded bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors inline-flex items-center gap-1">
+                Inspect <span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors cursor-pointer" data-case="AICTE/VIG/2024/0411" data-bureau="Vigilance" data-status="Pending" data-category="Ragging / Harassment" data-priority="Critical" onclick="openCaseDrawer('AICTE/VIG/2024/0411')">
+<td class="py-3.5 px-4">
+<div class="font-code-sm text-code-sm font-bold text-primary-container">AICTE/VIG/2024/0411</div>
+<div class="font-code-sm text-code-sm text-on-surface-variant">PID: 1-8849201</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="font-headline-sm text-headline-sm text-on-surface leading-tight">National Polytechnic Institute</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Affiliated: MSBTE, Mumbai (WRO)</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2 py-0.5 rounded-full bg-error-container text-error font-label-sm text-label-sm font-semibold">Ragging / Harassment</span>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Complainant: Parent / 1st Year</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-label-sm text-label-sm font-semibold text-error">Vigilance Cell</span>
+<div class="font-code-sm text-code-sm text-on-surface-variant">Off: Maj. Gen. A. Roy</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="font-code-sm text-code-sm font-bold text-on-surface">3 Days Active</div>
+<div class="font-label-sm text-label-sm text-tertiary">Immediate 48h SLA</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm font-bold bg-error-container text-error">98 / 100</span>
+<span class="px-1.5 py-0.5 rounded bg-error text-on-error font-label-sm text-label-sm font-bold">CRITICAL</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm font-bold bg-secondary-fixed text-on-secondary-fixed inline-flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Pending
+              </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="px-3 py-1 rounded bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors inline-flex items-center gap-1">
+                Inspect <span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors cursor-pointer" data-case="AICTE/APP/2024/0742" data-bureau="Approval" data-status="Under Process" data-category="Infrastructure Deficit" data-priority="Medium" onclick="openCaseDrawer('AICTE/APP/2024/0742')">
+<td class="py-3.5 px-4">
+<div class="font-code-sm text-code-sm font-bold text-primary-container">AICTE/APP/2024/0742</div>
+<div class="font-code-sm text-code-sm text-on-surface-variant">PID: 1-33921094</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="font-headline-sm text-headline-sm text-on-surface leading-tight">Heritage Institute of Technology</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Affiliated: MAKAUT, Kolkata (ERO)</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">Infrastructure Deficit</span>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Complainant: Student Council</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Approval Bureau</span>
+<div class="font-code-sm text-code-sm text-on-surface-variant">Off: Er. D. K. Sengupta</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="font-code-sm text-code-sm font-bold text-on-surface">14 Days Active</div>
+<div class="font-label-sm text-label-sm text-tertiary">Inspection Scheduled</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm font-bold bg-surface-container-high text-on-surface">62 / 100</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm font-bold bg-surface-container-high text-primary-container inline-flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span> Under Process
+              </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="px-3 py-1 rounded bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors inline-flex items-center gap-1">
+                Inspect <span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors cursor-pointer" data-case="AICTE/POL/2024/0219" data-bureau="Policy" data-status="Disposed" data-category="Admission Irregularity" data-priority="Medium" onclick="openCaseDrawer('AICTE/POL/2024/0219')">
+<td class="py-3.5 px-4">
+<div class="font-code-sm text-code-sm font-bold text-primary-container">AICTE/POL/2024/0219</div>
+<div class="font-code-sm text-code-sm text-on-surface-variant">PID: 1-55019283</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="font-headline-sm text-headline-sm text-on-surface leading-tight">Marathwada Engineering College</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Affiliated: BAMU, Chhatrapati Sambhajinagar</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">Admission Irregularity</span>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Complainant: State CET Candidate</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Policy Bureau</span>
+<div class="font-code-sm text-code-sm text-on-surface-variant">Off: Smt. Neha Bansal</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="font-code-sm text-code-sm font-bold text-tertiary">Discharged (Day 9)</div>
+<div class="font-label-sm text-label-sm text-tertiary">Penalty Enforced</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm font-bold bg-surface-container-high text-on-surface">45 / 100</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm font-bold bg-tertiary-fixed text-tertiary inline-flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Disposed
+              </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="px-3 py-1 rounded bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors inline-flex items-center gap-1">
+                Dossier <span class="material-symbols-outlined text-[16px]">receipt_long</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination Footer -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm pt-2 text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-2">
+<span>Showing 1 to 5 of 1,284 records</span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span class="font-code-sm text-code-sm">Page 1 of 257</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="px-3 py-1.5 rounded bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors disabled:opacity-40" disabled="">Previous</button>
+<button class="px-3 py-1.5 rounded bg-primary-container text-on-primary font-semibold">1</button>
+<button class="px-3 py-1.5 rounded bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors">2</button>
+<button class="px-3 py-1.5 rounded bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors">3</button>
+<span class="px-2">...</span>
+<button class="px-3 py-1.5 rounded bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors">257</button>
+<button class="px-3 py-1.5 rounded bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors">Next</button>
+</div>
+</div>
+</div>
+<!-- Interactive Slide-over Case Dossier Drawer -->
+<div class="fixed inset-0 z-50 overflow-hidden pointer-events-none transition-opacity duration-300 opacity-0" id="caseDrawer">
+<!-- Backdrop Shield -->
+<div class="absolute inset-0 bg-inverse-surface/40 backdrop-blur-sm transition-opacity" id="drawerBackdrop" onclick="closeCaseDrawer()"></div>
+<!-- Side Panel Content -->
+<div class="absolute inset-y-0 right-0 max-w-full flex pl-10 pointer-events-auto">
+<div class="w-screen max-w-2xl bg-surface-container-lowest shadow-2xl flex flex-col justify-between overflow-y-auto">
+<!-- Top Institutional Header of Drawer -->
+<div>
+<div class="h-1.5 bg-gradient-to-r from-primary-container via-primary-container to-secondary-container"></div>
+<div class="p-space-md border-b border-surface-container flex items-start justify-between bg-surface-container-low">
+<div>
+<div class="flex items-center gap-2">
+<span class="font-code-sm text-code-sm font-bold text-primary-container" id="drawerCaseId">AICTE/PGRC/2024/0984</span>
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-error-container text-error font-bold" id="drawerStatusBadge">OVERDUE (Day 22)</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold mt-1" id="drawerInstName">Apex Institute of Technology</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Permanent ID: <span class="font-code-sm text-code-sm font-semibold text-on-surface" id="drawerPID">1-49281912</span> • Regional Office: <span id="drawerRO">Northern Region (NWRO)</span></p>
+</div>
+<button class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors" onclick="closeCaseDrawer()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Drawer Tabs -->
+<div class="flex items-center border-b border-surface-container px-space-md bg-surface-container-lowest">
+<button class="py-3 px-4 font-label-md text-label-md font-semibold text-primary border-b-2 border-primary-container" id="btn-tab-timeline" onclick="switchDrawerTab('tab-timeline')">Chronological Timeline</button>
+<button class="py-3 px-4 font-label-md text-label-md font-medium text-on-surface-variant hover:text-on-surface" id="btn-tab-details" onclick="switchDrawerTab('tab-details')">Case Details</button>
+<button class="py-3 px-4 font-label-md text-label-md font-medium text-on-surface-variant hover:text-on-surface flex items-center gap-1" id="btn-tab-duplicate" onclick="switchDrawerTab('tab-duplicate')">
+              Duplicate Detector
+              <span class="px-1.5 py-0.2 rounded-full bg-secondary-fixed text-on-secondary-fixed font-code-sm text-[10px]">2</span>
+</button>
+<button class="py-3 px-4 font-label-md text-label-md font-medium text-on-surface-variant hover:text-on-surface" id="btn-tab-docs" onclick="switchDrawerTab('tab-docs')">Attached Evidence</button>
+</div>
+<!-- Drawer Content Body -->
+<div class="p-space-md">
+<!-- TAB 1: Chronological Timeline -->
+<div class="flex flex-col" id="tab-timeline">
+<div class="mb-space-md">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Statutory Progress Chain</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">End-to-end audit trail of grievance resolution steps</p>
+</div>
+<!-- Delivery App Style Chronological Stepper -->
+<div class="relative pl-6 space-y-6 before:absolute before:left-2 before:top-2 before:bottom-2 before:w-0.5 before:bg-surface-container-high">
+<!-- Step 1 (Completed) -->
+<div class="relative">
+<div class="absolute -left-6 top-1 w-4 h-4 rounded-full bg-tertiary flex items-center justify-center text-on-tertiary">
+<span class="material-symbols-outlined text-[12px]">check</span>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="font-bold text-on-surface">Complaint Lodged on Central Portal</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">14 Feb 2024, 10:30 AM</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Grievance verified with Aadhaar/DigiLocker credentialing by Final Year Computer Engineering students.</p>
+</div>
+</div>
+<!-- Step 2 (Completed) -->
+<div class="relative">
+<div class="absolute -left-6 top-1 w-4 h-4 rounded-full bg-tertiary flex items-center justify-center text-on-tertiary">
+<span class="material-symbols-outlined text-[12px]">check</span>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="font-bold text-on-surface">Document Verification & Intake Scrutiny</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">15 Feb 2024, 03:15 PM</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Bank transaction receipts and demand notice copies validated by AICTE Initial Scrutiny Cell.</p>
+</div>
+</div>
+<!-- Step 3 (Completed) -->
+<div class="relative">
+<div class="absolute -left-6 top-1 w-4 h-4 rounded-full bg-tertiary flex items-center justify-center text-on-tertiary">
+<span class="material-symbols-outlined text-[12px]">check</span>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="font-bold text-on-surface">Assigned to Regulation Bureau</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">18 Feb 2024, 11:00 AM</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Assigned to Investigating Officer: <strong>Shri P. N. Verma (Deputy Director, RB)</strong>.</p>
+</div>
+</div>
+<!-- Step 4 (Completed) -->
+<div class="relative">
+<div class="absolute -left-6 top-1 w-4 h-4 rounded-full bg-secondary flex items-center justify-center text-on-secondary">
+<span class="material-symbols-outlined text-[12px]">priority_high</span>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="font-bold text-on-surface">Show-Cause Notice Issued to College</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">24 Feb 2024, 05:40 PM</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Formal notice AICTE/RB/SCN/2024/91 despatched giving 15 statutory days to reply regarding unapproved fees.</p>
+</div>
+</div>
+<!-- Step 5 (Current / Active) -->
+<div class="relative">
+<div class="absolute -left-6 top-1 w-4 h-4 rounded-full bg-error flex items-center justify-center text-on-error animate-pulse">
+<span class="material-symbols-outlined text-[12px]">hourglass_empty</span>
+</div>
+<div class="bg-error-container/40 p-3 rounded-lg">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="font-bold text-error">Response Awaited (Escalated to Vigilance)</span>
+<span class="font-code-sm text-code-sm text-error font-bold">CURRENT STAGE</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface mt-1">Institution missed the 15-day deadline by 7 days. AICTE Standing Hearing Committee (SHC) summons pending release.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- TAB 2: Case Details (Hidden by default) -->
+<div class="hidden flex-col gap-4" id="tab-details">
+<div class="bg-surface-container-low p-4 rounded-lg flex flex-col gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Complaint Synopsis</span>
+<p class="font-body-md text-body-md text-on-surface" id="drawerSynopsis">The institution allegedly demanded additional unapproved capitation fees of INR 45,000 per student under the guise of "Special Development Charges" prior to release of degree certificates and exam hall tickets.</p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container-low p-3 rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Affiliating Body</span>
+<div class="font-body-md text-body-md font-semibold text-on-surface" id="drawerAffiliation">Dr. A.P.J. Abdul Kalam Technical University (AKTU)</div>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Complainant Category</span>
+<div class="font-body-md text-body-md font-semibold text-on-surface" id="drawerComplainant">Enrolled Students (34 Signatories)</div>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Applicable AICTE Regulation</span>
+<div class="font-body-md text-body-md font-semibold text-on-surface" id="drawerRegulation">Clause 4(a), AICTE Approval Process Handbook (APH)</div>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Potential Statutory Sanction</span>
+<div class="font-body-md text-body-md font-semibold text-error" id="drawerSanction">Seat Reduction / Zero Intake Warning</div>
+</div>
+</div>
+</div>
+<!-- TAB 3: Duplicate Detector -->
+<div class="hidden flex-col gap-3" id="tab-duplicate">
+<div class="bg-secondary-fixed/50 p-3 rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">info</span>
+<span class="font-label-sm text-label-sm font-bold text-on-secondary-fixed">AI Similarity Engine: 96.4% Match Found</span>
+</div>
+<span class="font-code-sm text-code-sm bg-surface-container-lowest px-2 py-0.5 rounded text-secondary font-bold">MERGE CANDIDATES</span>
+</div>
+<div class="space-y-3">
+<div class="p-3 bg-surface-container-low rounded-lg flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-code-sm text-code-sm font-bold text-primary-container">AICTE/PGRC/2024/0991</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">16 Feb 2024</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">"Illegal fee demand of 45k for semester hall ticket issuance without official receipts."</p>
+<div class="flex justify-end gap-2 mt-2">
+<button class="px-2.5 py-1 bg-surface-container rounded text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high">Review</button>
+<button class="px-2.5 py-1 bg-primary-container text-on-primary rounded font-label-sm text-label-sm hover:bg-primary">Consolidate into Main Case</button>
+</div>
+</div>
+<div class="p-3 bg-surface-container-low rounded-lg flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-code-sm text-code-sm font-bold text-primary-container">AICTE/NWRO/2024/0312</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">19 Feb 2024</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">"Extortionate development fee demands in Apex Institute B.Tech Dept."</p>
+<div class="flex justify-end gap-2 mt-2">
+<button class="px-2.5 py-1 bg-surface-container rounded text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high">Review</button>
+<button class="px-2.5 py-1 bg-primary-container text-on-primary rounded font-label-sm text-label-sm hover:bg-primary">Consolidate into Main Case</button>
+</div>
+</div>
+</div>
+</div>
+<!-- TAB 4: Documents -->
+<div class="hidden flex-col gap-3" id="tab-docs">
+<div class="p-3 bg-surface-container-low rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container text-[24px]">picture_as_pdf</span>
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Fee_Challan_Demand_Notice.pdf</div>
+<div class="font-code-sm text-code-sm text-on-surface-variant">1.4 MB • Uploaded 14 Feb 2024</div>
+</div>
+</div>
+<button class="px-3 py-1 bg-surface-container-lowest rounded text-primary-container font-label-sm text-label-sm hover:bg-surface-container">View PDF</button>
+</div>
+<div class="p-3 bg-surface-container-low rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container text-[24px]">description</span>
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">AICTE_ShowCause_Notice_SCN91.pdf</div>
+<div class="font-code-sm text-code-sm text-on-surface-variant">840 KB • Dispatched 24 Feb 2024</div>
+</div>
+</div>
+<button class="px-3 py-1 bg-surface-container-lowest rounded text-primary-container font-label-sm text-label-sm hover:bg-surface-container">Download Copy</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Drawer Administrative Footer Actions -->
+<div class="p-space-md border-t border-surface-container bg-surface-container-low flex flex-col gap-space-sm">
+<div class="flex flex-wrap items-center justify-between gap-2">
+<button class="px-3 py-2 bg-error text-on-error rounded font-label-md text-label-md hover:bg-error/90 transition-colors flex items-center gap-1.5 font-bold" onclick="triggerEscalation()">
+<span class="material-symbols-outlined text-[18px]">gavel</span>
+              Escalate to Hearing Committee
+            </button>
+<div class="flex items-center gap-2">
+<button class="px-3 py-2 bg-surface-container text-on-surface rounded font-label-md text-label-md hover:bg-surface-container-high transition-colors" onclick="promptTransfer()">Transfer Bureau</button>
+<button class="px-3 py-2 bg-primary-container text-on-primary rounded font-label-md text-label-md hover:bg-primary transition-colors" onclick="closeCaseDrawer()">Close Dossier</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Toast Notification Template -->
+<div class="fixed bottom-6 right-6 z-50 bg-inverse-surface text-inverse-on-surface px-4 py-3 rounded-lg shadow-xl flex items-center gap-3 transition-transform duration-300 translate-y-32 pointer-events-none" id="toastMessage">
+<span class="material-symbols-outlined text-tertiary-fixed text-[20px]">check_circle</span>
+<span class="font-body-md text-body-md" id="toastText">Action registered in administrative audit log.</span>
+</div>
+<script>
+    // Comprehensive Case Repository for Dynamic Dossier Loading
+    const caseDatabase = {
+      'AICTE/PGRC/2024/0984': {
+        id: 'AICTE/PGRC/2024/0984',
+        name: 'Apex Institute of Technology',
+        pid: '1-49281912',
+        ro: 'Northern Region (NWRO)',
+        bureau: 'RB (Regulation)',
+        status: 'Overdue',
+        statusBadge: 'OVERDUE (Day 22)',
+        statusBadgeClass: 'bg-error-container text-error font-bold',
+        category: 'Capitation Fee',
+        priority: 'Critical',
+        synopsis: 'The institution allegedly demanded additional unapproved capitation fees of INR 45,000 per student under the guise of "Special Development Charges" prior to release of degree certificates and exam hall tickets.',
+        affiliation: 'Dr. A.P.J. Abdul Kalam Technical University (AKTU)',
+        complainant: 'Enrolled Students (34 Signatories)',
+        regulation: 'Clause 4(a), AICTE Approval Process Handbook (APH)',
+        sanction: 'Seat Reduction / Zero Intake Warning'
+      },
+      'AICTE/REG/2024/1102': {
+        id: 'AICTE/REG/2024/1102',
+        name: 'Global Engineering Academy',
+        pid: '1-10294821',
+        ro: 'Southern Region (SRO)',
+        bureau: 'PGRC Central',
+        status: 'Under Process',
+        statusBadge: 'UNDER PROCESS (Day 11)',
+        statusBadgeClass: 'bg-surface-container-high text-primary-container font-bold',
+        category: 'Faculty Salaries',
+        priority: 'High',
+        synopsis: 'Non-payment and delayed disbursement of 6th & 7th Pay Commission salary arrears to 42 regular faculty members for over 6 consecutive months.',
+        affiliation: 'Anna University, Chennai',
+        complainant: 'Faculty Union (42 Signatories)',
+        regulation: 'Clause 6.1, Pay Scale & Service Conditions Norms',
+        sanction: 'Statutory Financial Penalty & Accreditation Review'
+      },
+      'AICTE/VIG/2024/0411': {
+        id: 'AICTE/VIG/2024/0411',
+        name: 'National Polytechnic Institute',
+        pid: '1-8849201',
+        ro: 'Western Region (WRO)',
+        bureau: 'Vigilance Cell',
+        status: 'Pending',
+        statusBadge: 'CRITICAL ESCALATION (Day 3)',
+        statusBadgeClass: 'bg-error text-on-error font-bold',
+        category: 'Ragging / Harassment',
+        priority: 'Critical',
+        synopsis: 'Severe incident of ragging and verbal harassment reported in freshman hostel. Anti-ragging cell failed to lodge mandatory FIR within 24 hours of reporting.',
+        affiliation: 'MSBTE, Mumbai',
+        complainant: 'Parent & 1st Year Diploma Students',
+        regulation: 'AICTE Prevention & Prohibition of Ragging Regulations, 2009',
+        sanction: 'Immediate On-Site Inquiry & Derecognition Notice'
+      },
+      'AICTE/APP/2024/0742': {
+        id: 'AICTE/APP/2024/0742',
+        name: 'Heritage Institute of Technology',
+        pid: '1-33921094',
+        ro: 'Eastern Region (ERO)',
+        bureau: 'Approval Bureau',
+        status: 'Under Process',
+        statusBadge: 'INSPECTION SCHEDULED (Day 14)',
+        statusBadgeClass: 'bg-surface-container-high text-primary-container font-bold',
+        category: 'Infrastructure Deficit',
+        priority: 'Medium',
+        synopsis: 'Deficit of mandatory laboratory equipment in Artificial Intelligence and Machine Learning labs, violating sanctioned student-to-workstation ratios.',
+        affiliation: 'MAKAUT, Kolkata',
+        complainant: 'Student Academic Council',
+        regulation: 'Appendix 4, Approval Norms for Laboratories',
+        sanction: 'Surprise EVC (Expert Visiting Committee) Inspection'
+      },
+      'AICTE/POL/2024/0219': {
+        id: 'AICTE/POL/2024/0219',
+        name: 'Marathwada Engineering College',
+        pid: '1-55019283',
+        ro: 'Western Region (WRO)',
+        bureau: 'Policy Bureau',
+        status: 'Disposed',
+        statusBadge: 'DISPOSED & PENALTY ENFORCED',
+        statusBadgeClass: 'bg-tertiary-fixed text-tertiary font-bold',
+        category: 'Admission Irregularity',
+        priority: 'Medium',
+        synopsis: 'Irregularity in institutional quota admissions without following merit list protocol. Investigation completed; institution penalized INR 5,00,000.',
+        affiliation: 'Dr. Babasaheb Ambedkar Marathwada University (BAMU)',
+        complainant: 'State CET Merit Candidate',
+        regulation: 'Clause 8, Single Window Centralized Admission Norms',
+        sanction: 'Case Discharged - Financial Penalty Enforced'
+      }
+    };
+
+    // Drawer Tab Switcher
+    function switchDrawerTab(tabId) {
+      const tabs = ['tab-timeline', 'tab-details', 'tab-duplicate', 'tab-docs'];
+      tabs.forEach(t => {
+        const el = document.getElementById(t);
+        const btn = document.getElementById('btn-' + t);
+        if (el && btn) {
+          if (t === tabId) {
+            el.classList.remove('hidden');
+            el.classList.add('flex');
+            btn.classList.add('border-b-2', 'border-primary-container', 'text-primary');
+            btn.classList.remove('text-on-surface-variant');
+          } else {
+            el.classList.add('hidden');
+            el.classList.remove('flex');
+            btn.classList.remove('border-b-2', 'border-primary-container', 'text-primary');
+            btn.classList.add('text-on-surface-variant');
+          }
+        }
+      });
+    }
+
+    // Open Case Drawer with Dynamic Data Binding
+    function openCaseDrawer(caseId) {
+      const data = caseDatabase[caseId] || {
+        id: caseId,
+        name: 'Institutional Case Record',
+        pid: '1-00000000',
+        ro: 'Central Bureau',
+        statusBadge: 'UNDER REVIEW',
+        statusBadgeClass: 'bg-surface-container-high text-on-surface',
+        synopsis: 'Case details archived under statutory oversight.',
+        affiliation: 'Affiliated University',
+        complainant: 'Complainant',
+        regulation: 'AICTE Regulations',
+        sanction: 'Pending Review'
+      };
+
+      const drawer = document.getElementById('caseDrawer');
+      const drawerCaseId = document.getElementById('drawerCaseId');
+      const drawerInstName = document.getElementById('drawerInstName');
+      const drawerPID = document.getElementById('drawerPID');
+      const drawerRO = document.getElementById('drawerRO');
+      const drawerStatusBadge = document.getElementById('drawerStatusBadge');
+      const drawerSynopsis = document.getElementById('drawerSynopsis');
+      const drawerAffiliation = document.getElementById('drawerAffiliation');
+      const drawerComplainant = document.getElementById('drawerComplainant');
+      const drawerRegulation = document.getElementById('drawerRegulation');
+      const drawerSanction = document.getElementById('drawerSanction');
+
+      if (drawerCaseId) drawerCaseId.innerText = data.id;
+      if (drawerInstName) drawerInstName.innerText = data.name;
+      if (drawerPID) drawerPID.innerText = data.pid;
+      if (drawerRO) drawerRO.innerText = data.ro;
+      if (drawerStatusBadge) {
+        drawerStatusBadge.innerText = data.statusBadge;
+        drawerStatusBadge.className = 'px-2 py-0.5 rounded font-label-sm text-label-sm ' + data.statusBadgeClass;
+      }
+      if (drawerSynopsis) drawerSynopsis.innerText = data.synopsis;
+      if (drawerAffiliation) drawerAffiliation.innerText = data.affiliation;
+      if (drawerComplainant) drawerComplainant.innerText = data.complainant;
+      if (drawerRegulation) drawerRegulation.innerText = data.regulation;
+      if (drawerSanction) drawerSanction.innerText = data.sanction;
+
+      // Always reset to first tab on open
+      switchDrawerTab('tab-timeline');
+
+      if (drawer) {
+        drawer.classList.remove('pointer-events-none', 'opacity-0');
+        drawer.classList.add('opacity-100');
+      }
+    }
+
+    // Close Case Drawer
+    function closeCaseDrawer() {
+      const drawer = document.getElementById('caseDrawer');
+      if (drawer) {
+        drawer.classList.remove('opacity-100');
+        drawer.classList.add('pointer-events-none', 'opacity-0');
+      }
+    }
+
+    // Interactive Toast Notification
+    let toastTimeout;
+    function showToast(message) {
+      const toast = document.getElementById('toastMessage');
+      const toastText = document.getElementById('toastText');
+      if (toast && toastText) {
+        toastText.innerText = message;
+        toast.classList.remove('translate-y-32', 'pointer-events-none');
+        clearTimeout(toastTimeout);
+        toastTimeout = setTimeout(() => {
+          toast.classList.add('translate-y-32', 'pointer-events-none');
+        }, 3200);
+      }
+    }
+
+    function triggerEscalation() {
+      showToast('Case successfully scheduled for AICTE Standing Hearing Committee (SHC).');
+      closeCaseDrawer();
+    }
+
+    function promptTransfer() {
+      showToast('Bureau transfer requisition forwarded to Vigilance Officer.');
+      closeCaseDrawer();
+    }
+
+    // Multi-Criteria Dynamic Table Filtering
+    function applyTableFilters() {
+      const query = (document.getElementById('caseTableSearch')?.value || '').toLowerCase().trim();
+      const bureau = document.getElementById('filterBureau')?.value || 'ALL';
+      const status = document.getElementById('filterStatus')?.value || 'ALL';
+      const category = document.getElementById('filterCategory')?.value || 'ALL';
+      const priority = document.getElementById('filterPriority')?.value || 'ALL';
+
+      const rows = document.querySelectorAll('#caseTableBody tr');
+      let visibleCount = 0;
+
+      rows.forEach(r => {
+        const rowText = r.innerText.toLowerCase();
+        const rowBureau = r.getAttribute('data-bureau') || '';
+        const rowStatus = r.getAttribute('data-status') || '';
+        const rowCategory = r.getAttribute('data-category') || '';
+        const rowPriority = r.getAttribute('data-priority') || '';
+
+        const matchesQuery = !query || rowText.includes(query);
+        const matchesBureau = bureau === 'ALL' || rowBureau === bureau;
+        const matchesStatus = status === 'ALL' || rowStatus === status;
+        const matchesCategory = category === 'ALL' || rowCategory === category;
+        const matchesPriority = priority === 'ALL' || rowPriority === priority;
+
+        if (matchesQuery && matchesBureau && matchesStatus && matchesCategory && matchesPriority) {
+          r.style.display = '';
+          visibleCount++;
+        } else {
+          r.style.display = 'none';
+        }
+      });
+    }
+
+    // Attach listeners to all filter controls
+    ['caseTableSearch', 'filterBureau', 'filterStatus', 'filterCategory', 'filterPriority'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.addEventListener(el.tagName === 'SELECT' ? 'change' : 'input', applyTableFilters);
+      }
+    });
+
+    // Quick Action & Notification Handlers
+    document.getElementById('btnQuickExport')?.addEventListener('click', () => {
+      showToast('Full statutory case compliance registry exported as CSV.');
+    });
+
+    // Sidebar navigation interactive feedback
+    document.querySelectorAll('aside nav a').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        document.querySelectorAll('aside nav a').forEach(a => {
+          a.classList.remove('bg-primary-container', 'text-on-primary', 'shadow-inner');
+          a.classList.add('text-primary-fixed');
+        });
+        link.classList.add('bg-primary-container', 'text-on-primary', 'shadow-inner');
+        link.classList.remove('text-primary-fixed');
+        const section = link.innerText.trim();
+        showToast('Navigated to: ' + section);
+      });
+    });
+
+    // Pagination feedback
+    document.querySelectorAll('.sm\\:flex-row button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const text = btn.innerText.trim();
+        showToast('Viewing page: ' + text);
+      });
+    });
+  </script>
+</div></main></div></body></html>
